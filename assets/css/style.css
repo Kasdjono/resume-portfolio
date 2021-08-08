@@ -11,14 +11,18 @@
 
 
 body {
-    background-color: rgb(179, 244, 247);
+    background-color: whitesmoke;
   }
 
+  /*---- Header ---*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(117, 219, 250);
-    color: #ffffff;
+    background-color: rgb(214, 227, 231);
+    color: var(--header-color);
+    margin: .2em;
+    position: fixed;
+    width: 99.4%;
 }
 
 .header h1 {
@@ -36,14 +40,28 @@ body {
 
 .header nav ul{
     list-style-type: none;
+    text-align: end;
 }
 
 .header nav ul li {
     display: inline-block;
+    align-items: flex-end;
     margin-left: 25px;
-}
-
-a {
-    color: #ffffff;
+    color: var(--header-color);
     text-decoration: none;
 }
+
+/*--- Profile Image ---*/
+
+.profile-image img {
+    object-fit: cover;
+    background-position: inherit;
+    background-size: cover;
+    width: 85%;
+    margin-top: .25em;
+    margin-bottom: .25em;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-top: 6em;
+}
+
