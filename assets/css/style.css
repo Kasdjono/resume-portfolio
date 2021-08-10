@@ -4,17 +4,21 @@
     margin: 0;
 }
 
+/* ------ Variables ------ */
 :root {
     --header-color: rgb(175, 13, 13);
-    
+    --nav-color: rgb(204, 28, 86);
+    --nav-shadow: 2px 2px 3px rgb(151, 78, 115);
 }
 
 
+/* ------ Body ------ */
 body {
     background-color: rgb(218, 216, 216);
   }
 
-  /*---- Header ---*/
+
+  /* ------ Header ------ */
 .header {
     /* display: flex */
     padding: 15px;
@@ -24,7 +28,6 @@ body {
     margin-top: .35em;
     position: fixed;
     width: 100%;
-    background-image: ;
 }
 
 .header h1 {
@@ -32,6 +35,8 @@ body {
     font-size: 48px;
 }
 
+
+/* ------ Header / Navigation Bar ------- */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -40,26 +45,31 @@ body {
     font-size: 20px;
 }
 
-.header nav ul{
+.header nav ul {
     list-style-type: none;
     text-align: end;
 
 }
 
-.header nav ul li{
+.header nav ul li {
     display: inline-block;
     align-items: flex-end;
     margin-left: 25px;
 
 }
 
-.header nav ul li a{
+.header nav ul li a {
     color: var(--header-color);
     text-decoration: none;
 }
 
+.header nav ul li a:hover {
+    color: var(--nav-color);
+    text-shadow: var(--nav-shadow);
+}
 
-/*--- Profile Image ---*/
+
+/* ------ Profile Image ------ */
 
 .profile-image img {
     object-fit: cover;
@@ -73,7 +83,12 @@ body {
     padding-top: 6em;
 }
 
-/*--- Main Section ---*/
+
+/* ------ Main Section ------ */
+
+.main {
+    margin-bottom: 30px;
+}
 
 .info {
     padding: 2em;
@@ -91,3 +106,31 @@ body {
     font-weight: bold;
 }
 
+.info p {
+    margin: 1em;
+}
+
+
+/* ------ Footer ------ */
+
+.footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.footer nav ul li a {
+    margin: 2em;
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+.footer nav ul li a:hover {
+    color: var(--nav-color);
+    text-shadow: var(--nav-shadow);
+}
