@@ -7,8 +7,8 @@
 /* ------ Variables ------ */
 :root {
     --header-color: rgb(175, 13, 13);
-    --nav-color: rgb(204, 28, 86);
-    --nav-shadow: 2px 2px 3px rgb(151, 78, 115);
+    --hover-color: rgb(204, 28, 86);
+    --hover-shadow: 2px 2px 3px rgb(151, 78, 115);
 }
 
 
@@ -64,8 +64,8 @@ body {
 }
 
 .header nav ul li a:hover {
-    color: var(--nav-color);
-    text-shadow: var(--nav-shadow);
+    color: var(--hover-color);
+    text-shadow: var(--hover-shadow);
 }
 
 
@@ -88,15 +88,20 @@ body {
 
 .main {
     margin-bottom: 30px;
+    display: flex;
 }
 
 .info {
     padding: 2em;
-    border-style: ridge;
     border-color: var(--header-color);
     border-style: ridge;
     border-radius: 1em;
     margin: 2em;
+}
+
+.info:hover {
+    border-color: var(--hover-color);
+    box-shadow: var(--hover-shadow), var(--hover-shadow), var(--hover-shadow);
 }
 
 .info h2 {
@@ -104,10 +109,20 @@ body {
     color: var(--header-color);
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    text-align: center;
 }
 
 .info p {
     margin: 1em;
+}
+
+
+/* ------ Contact Alignment Section ------ */
+
+.info .cont-info {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -131,6 +146,6 @@ body {
 }
 
 .footer nav ul li a:hover {
-    color: var(--nav-color);
-    text-shadow: var(--nav-shadow);
+    color: var(--hover-color);
+    text-shadow: var(--hover-shadow);
 }
