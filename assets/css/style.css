@@ -177,10 +177,26 @@ body {
 
 /* ------ Contact Alignment Section ------ */
 
-.contact section {
+.contact {
+    padding-top: 2em;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
+    align-items: top;
+    justify-content: space-evenly;
+}
+
+.cont-info h3 {
+    font-size: 22;
+    text-align: center;
+    align-content: center;
+}
+
+.cont-info {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    align-content: center;
 }
 
 
