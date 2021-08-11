@@ -121,18 +121,48 @@ body {
 
 .projects {
     flex: 4;
-    /* background-color: #fff; */
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-  }
+}
 
+.item {
+    border-style: ridge;
+    border-color: var(--heliotrope);
+    border-width: thin;
+    border-radius: 10px;
+    padding: 15px;
+}
 
-.card img {
+.item:hover {
+    border-color: var(--header-color);
+    box-shadow: var(--header-color), var(--header-color), var(--header-color);
+}
+
+.item header,
+.item p {
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+.item img {
     max-width: 200px;
     max-height: 120px;
+    border-radius: 10px;
+}
+
+.item-first img {
+    max-width: 400px;
+    max-height: 240px;
+    border-radius: 10px;
+}
+
+.item-first header,
+.item-first p {
+    text-align: center;
+    padding-bottom: .5rem;
 }
 
 
