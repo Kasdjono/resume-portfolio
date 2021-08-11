@@ -88,7 +88,7 @@ body {
 
 .main {
     margin-bottom: 30px;
-    display: flex;
+    display: flex;    
 }
 
 .info {
@@ -117,12 +117,31 @@ body {
 }
 
 
+/* ------ Web Developement Projects ------ */
+
+.projects {
+    flex: 4;
+    /* background-color: #fff; */
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+
+.card img {
+    max-width: 200px;
+    max-height: 120px;
+}
+
+
 /* ------ Contact Alignment Section ------ */
 
-.info .cont-info {
-    display: inline-block;
-    align-items: center;
-    text-align: center;
+.info div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 
