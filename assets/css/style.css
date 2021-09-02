@@ -162,17 +162,17 @@ body {
     border-radius: 10px;
 }
 
-.item-first img {
+/* .item-first img {
     max-width: 400px;
     max-height: 240px;
     border-radius: 10px;
-}
+} */
 
-.item-first header,
+/* .item-first header,
 .item-first p {
     text-align: center;
     padding-bottom: .5rem;
-}
+} */
 
 
 /* ------ Contact Alignment Section ------ */
@@ -187,7 +187,7 @@ body {
 }
 
 .cont-info h3 {
-    font-size: 22;
+    font-size: 28;
     text-align: center;
     align-content: center;
 }

@@ -7,7 +7,7 @@
 <br />
 
 ## The following features have been added to the page:
-<br />
+<br/>
 
         - My name, a recent photo or avatar, and links to sections about me, my work, and how to contact me
         - UI scrolls to the corresponding section
@@ -16,8 +16,7 @@
         - Images of application will deploy the application
         - Is presented with a responsive layout
 
-<br />
-
+<br/>
 
 
 ## Screen Shots of Profile Page
